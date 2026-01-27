@@ -2736,5 +2736,19 @@ input, select, textarea {
 #header > .container {
     box-shadow: none; /* Remove toda a sombra */
 }
+#footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 0.6em 1em;
+    font-size: 0.75rem;
+    text-align: left;
+}
+
+#footer p {
+    margin: 0.1em 0;
+    opacity: 0.8;
+}
+
+
 
 
