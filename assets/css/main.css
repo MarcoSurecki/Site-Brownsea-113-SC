@@ -1949,7 +1949,7 @@ input, select, textarea {
 
 		#nav > ul > li {
 			display: inline-block;
-			padding-right: 2em;
+			padding-right: 1em;
 		}
 
 			#nav > ul > li:last-child {
@@ -1960,17 +1960,17 @@ input, select, textarea {
 				border: 0;
 				text-decoration: none;
 				text-transform: uppercase;
-				font-weight: 400;
-				color: #777;
+				font-weight: 500;
+				color: #1a1818;
 				outline: 0;
 				display: block;
 			}
 
 				#nav > ul > li > a:before {
 					display: inline-block;
-					background: #878787;
-					color: #e4e4e4;
-					width: 2.25em;
+					background: #635f5f;
+					color: #3a3838;
+					width: 1.8em;
 					font-size: 0.8em;
 					height: 2.25em;
 					border-radius: 2.25em;
