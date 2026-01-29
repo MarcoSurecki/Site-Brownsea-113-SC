@@ -98,7 +98,7 @@
     background-position: center;
     color: rgb(190, 39, 39);
     text-align: center;
-    padding: 12em 0;">
+    padding: 9em 0;">
 
     <div class="container">
         
@@ -362,20 +362,32 @@
         </section>
 
  <!-- Fotos do Grupo -->
-        <section id="fotos" style="background-color:#4c4b4b; padding:3em 0;">
-            <div class="container">
-                <header>
-                    <h2><strong>Fotos do Grupo</strong></h2>
-                    <p>Algumas aventuras e momentos inesquecíveis:</p>
-                </header>
-                <div class="row aln-center">
-                    <div class="col-3 col-6-medium col-12-small"><a href="#" class="image featured"><img src="images/foto1.jpg" alt="Foto do grupo"></a></div>
-                    <div class="col-3 col-6-medium col-12-small"><a href="#" class="image featured"><img src="images/foto2.jpg" alt="Foto do grupo"></a></div>
-                    <div class="col-3 col-6-medium col-12-small"><a href="#" class="image featured"><img src="images/foto3.jpg" alt="Foto do grupo"></a></div>
-                    <div class="col-3 col-6-medium col-12-small"><a href="#" class="image featured"><img src="images/foto4.jpg" alt="Foto do grupo"></a></div>
-                </div>
+      <section id="fotos" style="background-color:#4c4b4b; padding:3em 0;">
+    <div class="container">
+        <header>
+            <h2><strong>Fotos do Grupo</strong></h2>
+            <p>Algumas aventuras e momentos inesquecíveis:</p>
+        </header>
+
+        <div class="fotos-wrapper">
+            <button class="seta esquerda">&#10094;</button>
+
+            <div class="fotos-scroll" id="galeria">
+                <img src="images/foto1.jpg" alt="">
+                <img src="images/foto2.jpg" alt="">
+                <img src="images/foto3.jpg" alt="">
+                <img src="images/foto4.jpg" alt="">
+                <img src="images/foto5.jpg" alt="">
+                <img src="images/foto6.jpg" alt="">
             </div>
-        </section>
+
+            <button class="seta direita">&#10095;</button>
+        </div>
+    </div>
+</section>
+
+
+
 
 
         <!-- Fale Conosco -->
@@ -435,6 +447,24 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    var galeria = document.getElementById("galeria");
+    var direita = document.querySelector(".seta.direita");
+    var esquerda = document.querySelector(".seta.esquerda");
+
+    direita.addEventListener("click", function () {
+        galeria.scrollLeft += 300;
+    });
+
+    esquerda.addEventListener("click", function () {
+        galeria.scrollLeft -= 300;
+    });
+
+});
+</script>
+
 </body>
 </html>
 
