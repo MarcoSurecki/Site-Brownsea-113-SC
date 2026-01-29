@@ -2748,6 +2748,11 @@ input, select, textarea {
     margin: 0.1em 0;
     opacity: 0.8;
 }
+#banner,
+#main {
+    border: none !important;
+    box-shadow: none !important;
+}
 
 
 
