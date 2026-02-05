@@ -2682,7 +2682,7 @@ input, select, textarea {
 		/* Footer */
 
 			#footer {
-				padding: 2em 0;
+				padding: 1em 0;
 			}
 
 				#footer ul.icons {
@@ -2793,7 +2793,7 @@ input, select, textarea {
     background: rgba(0,0,0,0.7);
     color: white;
     border: none;
-    font-size: 2em;
+    font-size: 1em;
     padding: 0.2em 0.5em;
     cursor: pointer;
     z-index: 10;
