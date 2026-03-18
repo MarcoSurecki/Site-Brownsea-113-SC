@@ -1,0 +1,294 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+<title>Área da Chefia</title>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<style>
+
+body{
+background:#f4f4f4;
+font-family:Arial, Helvetica, sans-serif;
+margin:0;
+}
+
+.login-box{
+
+background:rgb(117, 119, 132);
+padding:40px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+max-width:450px;
+margin:auto;
+margin-top:80px;
+
+text-align:center;
+
+}
+
+h2{
+color:#102c83;
+margin-bottom:5px;
+}
+
+.sub{
+color:#666;
+font-size:14px;
+margin-bottom:25px;
+}
+
+input{
+
+width:100%;
+padding:12px;
+margin-top:10px;
+
+border-radius:6px;
+border:1px solid #ccc;
+
+font-size:16px;
+
+}
+
+button{
+
+background:#c00000;
+color:white;
+
+border:none;
+
+padding:12px 20px;
+
+border-radius:6px;
+
+margin-top:15px;
+
+cursor:pointer;
+
+font-size:16px;
+
+transition:0.3s;
+
+}
+
+button:hover{
+
+background:#a00000;
+
+}
+
+.doc-button{
+
+display:block;
+
+background:#c00000;
+
+color:white;
+
+text-decoration:none;
+
+padding:12px;
+
+border-radius:6px;
+
+margin-top:10px;
+
+transition:0.3s;
+
+}
+
+.doc-button:hover{
+
+background:#a00000;
+
+}
+
+.logout{
+
+background:#555;
+margin-top:25px;
+
+}
+
+.logout:hover{
+
+background:#333;
+
+}
+
+.docs{
+
+margin-top:25px;
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="login-box">
+
+<h2>Área da Chefia</h2>
+
+<p class="sub">Acesso restrito aos chefes do grupo</p>
+
+
+<!-- LOGIN -->
+
+<div id="login">
+
+<input type="text" id="usuario" placeholder="Usuário">
+
+<input type="password" id="senha" placeholder="Senha">
+
+<button onclick="verificarLogin()">Entrar</button>
+
+</div>
+
+
+
+<!-- CONTEÚDO -->
+
+<div id="conteudo" style="display:none;">
+
+<h3>Documentos Internos</h3>
+
+
+<div class="docs">
+
+
+<button class="doc-button" onclick="toggleDocs('padronizados')">
+📁 Documentos Padronizados
+</button>
+
+<div id="padronizados" style="display:none;">
+
+<a href="documentos/ficha-inscricao.pdf" class="doc-button" download>
+📄 Ficha de Inscrição
+</a>
+
+<a href="documentos/autorizacao-atividade.pdf" class="doc-button" download>
+📄 Autorização de Atividade
+</a>
+
+<a href="documentos/relatorio-atividade.pdf" class="doc-button" download>
+📄 Relatório de Atividade
+</a>
+
+</div>
+
+
+
+<button class="doc-button" onclick="toggleDocs('atas')">
+📁 Atas de Reunião
+</button>
+
+<div id="atas" style="display:none;">
+
+<a href="documentos/ata-marco.pdf" class="doc-button" download>
+📄 Ata Março
+</a>
+
+<a href="documentos/ata-abril.pdf" class="doc-button" download>
+📄 Ata Abril
+</a>
+
+</div>
+
+
+
+<button class="doc-button" onclick="toggleDocs('planejamento')">
+📁 Planejamento
+</button>
+
+<div id="planejamento" style="display:none;">
+
+<a href="documentos/planejamento-anual.pdf" class="doc-button" download>
+📄 Planejamento Anual
+</a>
+
+<a href="documentos/calendario.pdf" class="doc-button" download>
+📄 Calendário de Atividades
+</a>
+
+</div>
+
+
+</div>
+
+
+<button class="logout" onclick="logout()">
+Sair da área da chefia
+</button>
+
+
+</div>
+
+</div>
+
+
+
+<script>
+
+function verificarLogin(){
+
+var usuario = document.getElementById("usuario").value;
+
+var senha = document.getElementById("senha").value;
+
+if(usuario === "admin" && senha === "admin"){
+
+document.getElementById("login").style.display = "none";
+document.getElementById("conteudo").style.display = "block";
+
+}else{
+
+alert("Usuário ou senha incorretos");
+
+}
+
+}
+
+
+
+function toggleDocs(id){
+
+var secao = document.getElementById(id);
+
+if(secao.style.display === "none"){
+
+secao.style.display = "block";
+
+}else{
+
+secao.style.display = "none";
+
+}
+
+}
+
+
+
+function logout(){
+
+document.getElementById("conteudo").style.display = "none";
+document.getElementById("login").style.display = "block";
+
+document.getElementById("usuario").value = "";
+document.getElementById("senha").value = "";
+
+}
+
+</script>
+
+</body>
+
+</html>

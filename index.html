@@ -7,82 +7,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
     
-    <!-- Estilos  de Letras personalizados -->
-    <style>
-        /* Banner */
-        #banner {
-            background-color: #101110;
-            color: #ffffff;
-            font-family: 'Courier New', monospace;
-            text-align: center;
-            padding: 3em 0;
-        }
 
-        /* Quem Somos */
-        #quem-somos {
-            color: rgb(43, 90, 191);
-            font-family: 'calibri', monospace;
-        }
-
-        /* Leis escoteiras */ /*cores do subtirulo*/
-        #leis {
-            background-color: #0a0a0a;
-            color: rgb(50, 47, 47);
-            font-family: 'Courier New', monospace;
-        }
-
-        #leis h3 {
-            color: rgb(0, 0, 0) /* cores dos Titulos(leis em si) */
-        }
-
-        /* Atividades */
-        #atividades {
-            color:black;
-            font-family: 'Calibri', monospace;
-        }
-
-        /* Calendário */
-        #calendario {
-            background-color: #101110;
-            color: #4682B4;
-            font-family: 'Calibri', monospace;
-        }
-
-        /* Fotos do Grupo */
-        #fotos {
-            color: #151414;
-            font-family: 'Calibri', monospace;
-        }
-
-        /* Ramos Escoteiros */
-        #ramos-escoteiros {
-            color: #0a0a0a;
-            font-family: 'Calibri', monospace;
-        }
-
-        #ramos-escoteiros h3 {
-            color: #0b0a0b; /* título dos ramos */
-        }
-
-        /* Fale Conosco */
-        #fale-conosco {
-            background-color: #101110;
-            color: #0f0f0f;
-            font-family: 'Calibri', monospace;
-        }
-
-        /* Footer */
-        #footer {
-            background-color: #101110;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            font-family: 'Courier New', monospace;
-        }
-		#nav {
-    margin-top: -3em;
-}
-    </style>
 
 </head>
 
@@ -90,9 +15,9 @@
     <div id="page-wrapper">
         
 
-        <!-- Header -->
+ <!---- Imagem de Fundo Grupo ---->
 <section id="header" style="
-    background-image: url('images/fundo-grupo.jpg');
+    background-image: url('images/fundogrupo.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -103,7 +28,7 @@
     <div class="container">
         
 
-        <!-- Nav -->
+<!---- Navegação Inicio ---->
         <nav id="nav">
             <ul>
                 <li><a class="icon solid fa-home" href="#banner"><span>Início</span></a></li>
@@ -113,14 +38,17 @@
                 <li><a class="icon solid fa-calendar" href="#ramos-escoteiros"><span>Ramos</span></a></li>
                 <li><a class="icon solid fa-calendar" href="#calendario"><span>Calendario</span></a></li>
                 <li><a class="icon solid fa-envelope" href="#fotos"><span>Fotos do Grupo</span></a></li>
+                <li><a class="icon solid fa-file" href="#documentos"><span>Documentos</span></a></li>
+                <li><a class="icon solid fa-lock" href="./chefes.html"><span>Área da Chefia</span></a></li>
                 <li><a class="icon solid fa-users" href="#fale-conosco"><span>Fale Conosco</span></a></li>
+                
             </ul>
         </nav>
     </div>
 </section>
 
 
-    <!-- Banner Escoteiro -->
+<!---- Banner Escoteiro ---->
 <section id="banner" style="
     background: linear-gradient(135deg, #b50a07, #344084);
     color: #f5f5f0;
@@ -134,8 +62,7 @@
             font-weight: 700;
             letter-spacing: 2px;
             color: #f2c94c;
-        ">
-            
+        ">    
         </h2>
 
         <p style="
@@ -162,12 +89,11 @@
     </div>
 </section>
 
- <!-----------------------------------------------------------------  Quem Somos  --------------------------------------------------------------->
-
-<section id="quem-somos" style="background: linear-gradient(120deg, #909090, #ffffff); padding:0em 0; font-family: 'Montserrat', sans-serif;">
+ <!---- Quem Somos ---->
+ <section id="quem-somos" style="background: linear-gradient(120deg, #ffffff, #003366); padding:0em 0; font-family: 'Montserrat', sans-serif;">
     <div class="container" style="max-width:900px; margin:0 auto; text-align:center;">
 
-        <!------- Cabeçalho --------->
+        <!--- Cabeçalho --->
         <header style="margin-bottom:2em;">
             <h2 style="font-size:2.5em; color:#1a1b1a; position:relative; display:inline-block; margin-bottom:0.3em;">
             Quem Somos
@@ -178,12 +104,12 @@
             </p>
         </header>
 
-        <!------- Descrição ---------->
+        <!--- Descrição --->
         <div style="background:#ffffff; padding:1em; border-radius:15px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); color:#333; line-height:1.7em; font-size:1.05em;">
             Fundado em 2018, o nosso Grupo Escoteiro oferece experiências únicas ao ar livre, promovendo valores como responsabilidade, amizade, respeito e trabalho em equipe, enquanto nos divertimos e exploramos o mundo ao nosso redor.
         </div>
 
-        <!------ Ícones Extras ------->
+        <!--- Ícones --->
         <div style="margin-top:1em; display:flex; justify-content:center; gap:1em; flex-wrap:wrap;">
             <div style="text-align:center;">
                 <img src="https://img.icons8.com/ios-filled/50/1f4d2e/campfire.png" alt="Acampamento" style="margin-bottom:0.5em;">
@@ -202,15 +128,13 @@
                 <p style="color:#1f4d2e; font-weight:700; font-size:1em;">Natureza</p>
             </div>
         </div>
-
-    </div>
 </section>
 
-      <!------------------------------------------------------- Leis Escoteiras ------------------------------------------------------------------->
-<section id="leis" style="background: linear-gradient(120deg, #dc6161, #ffffff); padding:1em 0; font-family: 'Montserrat', sans-serif;">
+ <!---- Leis Escoteiras ---->
+<section id="leis" style="background: linear-gradient(120deg, #4682B4, #ffffff); padding:1em 0; font-family: 'Montserrat', sans-serif;">
     <div class="container" style="max-width:900px; margin:0 auto; text-align:center;">
 
-        <!-- Cabeçalho -->
+        <!--- Cabeçalho --->
 <header style="text-align:center; margin-bottom:1.5em;">
     <h2 style="font-size:2.5em; color:#1f4d2e; position:relative; display:inline-block; margin-bottom:0.3em;">
         <strong> ⚜️ Leis Escoteiras ⚜️ </strong>
@@ -220,74 +144,73 @@
     </p>
 </header>
 
-        <!-- Grid Compacta de Leis -->
+        <!--- Grid Compacta de Leis --->
         <div style="display:flex; flex-wrap:wrap; gap:1em; justify-content:center;">
 
-            <!-- Cada Box -->
+            <!--- Primeira Lei --->
             <div style="flex:1 1 calc(33% - 0.5em); min-width:200px;">
                 <div style="background:#ffffff; padding:1em; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.06); margin-bottom:0.8em;">
                     <h3 style="color:#1f4d2e; font-size:1em; margin-bottom:0.3em;">1. O escoteiro é honrado e digno de confiança</h3>
                     <p style="color:#333; font-size:0.85em; line-height:1.4em;">Sua palavra vale mais que a própria vida, sendo leal e autêntico.</p>
                 </div>
             </div>
-
+            <!--- Secunda Lei --->
             <div style="flex:1 1 calc(33% - 0.9em); min-width:200px;">
                 <div style="background:#ffffff; padding:1em; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.06); margin-bottom:0.8em;">
                     <h3 style="color:#1f4d2e; font-size:1em; margin-bottom:0.3em;">2. O escoteiro é leal</h3>
                     <p style="color:#333; font-size:0.85em; line-height:1.4em;">É leal à pátria, à família, aos chefes e aos amigos.</p>
                 </div>
             </div>
-
+            <!--- Terceira Lei --->
             <div style="flex:1 1 calc(33% - 0.5em); min-width:200px;">
                 <div style="background:#ffffff; padding:1em; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.06); margin-bottom:0.8em;">
                     <h3 style="color:#1f4d2e; font-size:1em; margin-bottom:0.3em;">3. O escoteiro está sempre alerta para ajudar o próximo</h3>
                     <p style="color:#333; font-size:0.85em; line-height:1.4em;">Age com prontidão para servir e auxiliar, sem esperar recompensa.</p>
                 </div>
             </div>
-
-            <!-- Repete para as demais leis -->
+            <!--- Quarta Lei --->>
             <div style="flex:1 1 calc(33% - 0.7em); min-width:200px;">
                 <div style="background:#ffffff; padding:1em; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.06); margin-bottom:0.8em;">
                     <h3 style="color:#1f4d2e; font-size:1em; margin-bottom:0.3em;">4. O escoteiro é amigo de todos</h3>
                     <p style="color:#333; font-size:0.85em; line-height:1.4em;">Trata todos com fraternidade, respeitando as diferenças.</p>
                 </div>
             </div>
-
+            <!--- Quinta Lei --->
             <div style="flex:1 1 calc(33% - 0.7em); min-width:200px;">
                 <div style="background:#ffffff; padding:1em; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.06); margin-bottom:0.8em;">
                     <h3 style="color:#1f4d2e; font-size:1em; margin-bottom:0.3em;">5. O escoteiro é cortês</h3>
                     <p style="color:#333; font-size:0.85em; line-height:1.4em;">É educado, gentil e respeitoso em todas as situações.</p>
                 </div>
             </div>
-
+            <!--- Sexta Lei --->
             <div style="flex:1 1 calc(33% - 0.7em); min-width:200px;">
                 <div style="background:#ffffff; padding:1em; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.06); margin-bottom:0.8em;">
                     <h3 style="color:#1f4d2e; font-size:1em; margin-bottom:0.3em;">6. O escoteiro é bom para os animais e as plantas</h3>
                     <p style="color:#333; font-size:0.85em; line-height:1.4em;">Respeita e protege a natureza e o meio ambiente.</p>
                 </div>
             </div>
-
+            <!--- Setima Lei --->
             <div style="flex:1 1 calc(33% - 0.7em); min-width:200px;">
                 <div style="background:#ffffff; padding:1em; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.06); margin-bottom:0.8em;">
                     <h3 style="color:#1f4d2e; font-size:1em; margin-bottom:0.3em;">7. O escoteiro é obediente e disciplinado</h3>
                     <p style="color:#333; font-size:0.85em; line-height:1.4em;">Compreende a importância da disciplina e cumpre ordens com responsabilidade.</p>
                 </div>
             </div>
-
+            <!--- Oitava Lei --->
             <div style="flex:1 1 calc(33% - 0.7em); min-width:200px;">
                 <div style="background:#ffffff; padding:1em; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.06); margin-bottom:0.8em;">
                     <h3 style="color:#1f4d2e; font-size:1em; margin-bottom:0.3em;">8. O escoteiro é alegre e sorri nas dificuldades</h3>
                     <p style="color:#333; font-size:0.85em; line-height:1.4em;">Mantém o otimismo e a positividade, mesmo diante de obstáculos.</p>
                 </div>
             </div>
-
+            <!--- Nona Lei --->
             <div style="flex:1 1 calc(33% - 0.7em); min-width:200px;">
                 <div style="background:#ffffff; padding:1em; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.06); margin-bottom:0.8em;">
                     <h3 style="color:#1f4d2e; font-size:1em; margin-bottom:0.3em;">9. O escoteiro é econômico e respeita o bem alheio</h3>
                     <p style="color:#333; font-size:0.85em; line-height:1.4em;">Cuida dos recursos próprios e públicos, valorizando o esforço e o trabalho.</p>
                 </div>
             </div>
-
+            <!--- Décima Lei --->
             <div style="flex:1 1 calc(100% - 0.7em); min-width:200px;">
                 <div style="background:#ffffff; padding:1em; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.06); margin-top:0.8em;">
                     <h3 style="color:#1f4d2e; font-size:1em; margin-bottom:0.3em;">10. O escoteiro é limpo de corpo e alma</h3>
@@ -296,18 +219,13 @@
             </div>
 
         </div>
-    </div>
 </section>
 
-
-
-
-
-    <!-- Atividades Escoteiras - Estilo Colorido e Moderno -->
+<!---- Atividades Escoteiras ---->
 <section id=atividades style="background:#eaedead7; padding:1em 0; font-family:'Montserrat', sans-serif;">
     <div class="container" style="max-width:1000px; margin:0 auto; text-align:center;">
 
-        <!-- Cabeçalho -->
+        <!--- Cabeçalho --->
         <header style="margin-bottom:2em;">
             <h2 style="font-size:2em; color:#2b5d34; margin-bottom:0.3em;">
                 Atividades Escoteiras
@@ -317,38 +235,38 @@
             </p>
         </header>
 
-        <!-- Grid de Atividades Coloridas -->
+        <!--- Grid de Atividades Coloridas --->
         <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1.5em;">
 
-            <!-- Card 1 -->
+            <!--- Card Acampamentos --->
             <div style="background:#fffae5; flex:1 1 180px; min-width:180px; border-radius:50px; padding:2em 1em; box-shadow:0 8px 20px rgba(0,0,0,0.08); transition:0.3s; cursor:pointer;">
                 <div style="font-size:2em; margin-bottom:0.5em;">🏕️</div>
                 <strong style="display:block; color:#d68c2c; margin-bottom:0.3em;">Acampamentos</strong>
                 <span style="font-size:0.9em; color:#555;">Contato direto com a natureza e espírito de equipa.</span>
             </div>
 
-            <!-- Card 2 -->
+            <!--- Card Fogueiras --->
             <div style="background:#e5f7ff; flex:1 1 180px; min-width:180px; border-radius:50px; padding:2em 1em; box-shadow:0 8px 20px rgba(0,0,0,0.08); transition:0.3s; cursor:pointer;">
                 <div style="font-size:2em; margin-bottom:0.5em;">🔥</div>
                 <strong style="display:block; color:#2c82d6; margin-bottom:0.3em;">Fogueiras</strong>
                 <span style="font-size:0.9em; color:#555;">Momentos de união, canções e histórias escoteiras.</span>
             </div>
 
-            <!-- Card 3 -->
+            <!--- Card Nós e Pionerias --->
             <div style="background:#e5ffe9; flex:1 1 180px; min-width:180px; border-radius:50px; padding:2em 1em; box-shadow:0 8px 20px rgba(0,0,0,0.08); transition:0.3s; cursor:pointer;">
                 <div style="font-size:2em; margin-bottom:0.5em;">🪢</div>
                 <strong style="display:block; color:#2ca84c; margin-bottom:0.3em;">Nós & Pioneirias</strong>
-                <span style="font-size:0.9em; color:#555;">Aprendizado técnico e trabalho em equipa.</span>
+                <span style="font-size:0.9em; color:#555;">Aprendizado técnico e trabalho em equipe.</span>
             </div>
 
-            <!-- Card 4 -->
+            <!--- Card Serviço --->
             <div style="background:#fff0f5; flex:1 1 180px; min-width:180px; border-radius:50px; padding:2em 1em; box-shadow:0 8px 20px rgba(0,0,0,0.08); transition:0.3s; cursor:pointer;">
                 <div style="font-size:2em; margin-bottom:0.5em;">🤝</div>
                 <strong style="display:block; color:#d62c82; margin-bottom:0.3em;">Serviço</strong>
                 <span style="font-size:0.9em; color:#555;">Ajudar o próximo e praticar boas ações diariamente.</span>
             </div>
 
-            <!-- Card 5 -->
+            <!--- Card Aventura --->
             <div style="background:#fffbe5; flex:1 1 180px; min-width:180px; border-radius:50px; padding:2em 1em; box-shadow:0 8px 20px rgba(0,0,0,0.08); transition:0.3s; cursor:pointer;">
                 <div style="font-size:2em; margin-bottom:0.5em;">🧭</div>
                 <strong style="display:block; color:#b38f2c; margin-bottom:0.3em;">Aventura</strong>
@@ -359,17 +277,15 @@
     </div>
 </section>
 
-
-
-     <!-- Ramos Escoteiros -->
-<section id=ramos-escoteiros style="background:#eaedead7; padding:1em 0; font-family:'Montserrat', sans-serif;">
+<!---- Ramos Escoteiros ---->
+<section id=ramos-escoteiros style="background:#f0f8ff; padding:1em 0; font-family:'Montserrat', sans-serif;">
     <div class="container">
         <header style="text-align:center;">
             <h2><strong>Ramos do Escotismo</strong></h2>
             <p>Cada faixa etária tem atividades adaptadas ao seu desenvolvimento:</p>
         </header>
         <div class="row aln-center">
-
+            <!--- Card Ramo Lobinho --->
             <div class="col-3 col-6-medium col-12-small">
                 <section class="box">
                     <a href="#" class="image featured ramo">
@@ -379,17 +295,17 @@
                     <p>Descoberta e diversão para crianças de 7 a 10 anos, aprendendo valores como amizade, respeito e cooperação.</p>
                 </section>
             </div>
-
+            <!--- Card Ramo Escoteiro --->
             <div class="col-3 col-6-medium col-12-small">
                 <section class="box">
                     <a href="#" class="image featured ramo">
                         <img src="images/escoteiro.jpg" alt="Escoteiros">
                     </a>
                     <header><h3>🧭  Ramo Escoteiro   🧭</h3></header>
-                    <p>Aventuras e desafios para jovens de 11 a 14 anos, desenvolvendo autonomia, responsabilidade e trabalho em equipa.</p>
+                    <p>Aventuras e desafios para jovens de 11 a 14 anos, desenvolvendo autonomia, responsabilidade e trabalho em equipe.</p>
                 </section>
             </div>
-
+            <!--- Card Ramo Sênior --->
             <div class="col-3 col-6-medium col-12-small">
                 <section class="box">
                     <a href="#" class="image featured ramo">
@@ -398,7 +314,7 @@
                     <header><h3>🔥  Ramo Sênior  🔥</h3></header>
                     <p>Desenvolvimento da liderança e superação pessoal para adolescentes de 15 a 17 anos.</p>
             </div>
-
+            <!--- Card Ramo Pioneiro --->
             <div class="col-3 col-6-medium col-12-small">
                 <section class="box">
                     <a href="#" class="image featured ramo">
@@ -413,11 +329,8 @@
     </div>
 </section>
 
-
-
-
-<!-- Calendário Escoteiro - Compacto -->
-<section id="calendario" style="background: linear-gradient(120deg, #02447aa1, #e3f2e3); padding:2em 0; font-family: 'Montserrat', sans-serif;">
+<!----- Calendário Escoteiro ---->
+<section id="calendario" style="background: linear-gradient(120deg, #02447a, #e3f2e3); padding:2em 0; font-family: 'Montserrat', sans-serif;">
     <div class="container" style="max-width:900px; margin:0 auto;">
 
         <!-- Cabeçalho Geral -->
@@ -431,7 +344,7 @@
             </p>
         </header>
 
-        <!-- Eventos Locais -->
+        <!--- Eventos Locais --->
         <ul style="list-style:none; padding:0; margin:0;">
             <li style="background:#fffdfd; margin-bottom:0.6em; padding:0.7em 2em; border-left:5px solid #2b5d34; border-radius:6px; color:#2b5d34; font-weight:600; font-size:0.95em;">
                 06/03/2026 – Retorno as Atividades 
@@ -450,7 +363,7 @@
             </li>
         </ul>
 
-        <!-- Eventos Mundiais -->
+        <!--- Eventos Mundiais --->
         <ul style="list-style:none; padding:0; margin:0;">
             <h2 style="font-size:2em; color:#003366; margin-bottom:0.3em;">🌍 Próximos Eventos Mundiais</h2>
             <li style="background:#ffffff; margin-bottom:0.6em; padding:0.8em 2em; border-left:5px solid #2b5d34; border-radius:6px; color:#2b5d34; font-weight:600; font-size:0.95em;">
@@ -461,16 +374,20 @@
     </div>
 </section>
 
-
-
- <!-- Fotos do Grupo -->
- <section id="fotos" style="background-color:#d4353550; padding:3em 0;">
-    <div class="container">
-        <header>
-            <h2><strong>Fotos do Grupo</strong></h2>
-            <p>Algumas aventuras e momentos inesquecíveis:</p>
+ <!---- Fotos do Grupo ---->
+ <section id="fotos" style="background: linear-gradient(120deg, #830b11, #e3f2e3); padding:2em 0; font-family: 'Montserrat', sans-serif;">
+    <div class="container"> 
+        <!--- Cabeçalho Geral --->
+        <header style="text-align:center; margin-bottom:1.5em;">
+            <h2 style="font-size:2.2em; color:#0f0f10; letter-spacing:1px; position:relative;">
+                FOTOS DO GRUPOS
+                <span style="display:block; width:50px; height:3px; background:#f2a50056; margin:0.1em auto 0; border-radius:2px;"></span>
+            </h2>
+            <p style="font-size:1em; color:#555; max-width:700px; margin:1.0em auto 0;">
+                           Olha um pouco dos momentos especiais do nosso grupo
+            </p>
         </header>
-
+        <!--- Fotos --->
         <div class="fotos-wrapper">
             <button class="seta esquerda">&#10094;</button>
 
@@ -488,53 +405,77 @@
     </div>
 </section>
 
+<!---- Documentos Padronizados ---->
+<section id="documentos" style="background:#003366; padding:3em 0;">
+    <div class="container">
 
+        <header class="major">
+            <h2 style="color:white;">Documentos Padronizados</h2>
+            <p style="color:#ccc;">Baixe aqui os documentos necessarios para atividades do Grupo.</p>
+        </header>
 
-
-
-        <!-- Fale Conosco -->
-        <section id="fale-conosco" style="background-color:#f4f4f4; padding:3em 0;">
-            <div class="container">
-                <header>
-                    <h2><strong>fale Conosco</strong></h2>
-                    <p>Quer saber mais ou entrar para o Grupo Escoteiro? Preencha o formulário abaixo:</p>
-                </header>
-                <div class="row">
-                    <div class="col-6 col-12-medium">
-                        <form action="marcoantoniocarvalhodasilva@gmail.com" method="post" enctype="text/plain">
-
-                            <div class="row gtr-50">
-                                <div class="col-6 col-12-small">
-                                    <input name="name" placeholder="Nome" type="text" />
-                                </div>
-                                <div class="col-6 col-12-small">
-                                    <input name="email" placeholder="E-mail" type="email" />
-                                </div>
-                                <div class="col-12">
-                                    <textarea name="message" placeholder="Mensagem"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="button icon solid fa-envelope">Enviar Mensagem</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-6 col-12-medium">
-                        <ul class="icons">
-                            <li class="icon solid fa-home">
-                                R. José Cosme Pamplona, 1447 - casa 5 - Bela Vista, Palhoça - SC, 88132-700
-                            </li>
-                            <li class="icon solid fa-phone">(48) 98438-9354</li>
-                            <li class="icon solid fa-envelope"><a href="mailto:contato@grupoescoteiro.com">contato@grupoescoteiro.com</a></li>
-                            <li class="icon brands fa-facebook-f"><a href="#">facebook.com/grupoescoteiro</a></li>
-                            <li class="icon brands fa-instagram"><a href="#">https://www.instagram.com/g.e.brownsea</a></li>
-                        </ul>
-                    </div>
-                </div>
+        <div style="display:flex; flex-wrap:wrap; gap:2em; justify-content:center;">
+            <!--- Ficha Médica --->
+            <div style="background:rgb(248, 248, 248); padding:1em; border-radius:8px; width:260px; text-align:center;">
+                <h3>Ficha Médica</h3>
+                <p>Documento obrigatório para participação nas atividades.</p>
+                <a href="documentos/ficha-medica.pdf" download class="button">Baixar</a>
             </div>
-        </section>
+            <!--- Ficha de Autorização --->
+            <div style="background:white; padding:1em; border-radius:8px; width:260px; text-align:center;">
+                <h3>Ficha de Autorização de Acampamento</h3>
+                <p>Termo para participação em acampamentos e eventos.</p>
+                <a href="documentos/autorizacao-acampamento.pdf" download class="button">Baixar</a>
+            </div>
 
-        <!-- Footer -->
+        </div>
+
+    </div>
+</section>
+
+<!---- Fale Conosco ---->
+<section id="fale-conosco" style="background-color:#f4f4f4; padding:3em 0;">
+    <div class="container">
+        <header>
+            <h2><strong>fale Conosco</strong></h2>
+            <p>Quer saber mais ou entrar para o Grupo Escoteiro? Preencha o formulário abaixo:</p>
+        </header>
+        <div class="row">
+            <div class="col-6 col-12-medium">
+                <form action="marcoantoniocarvalhodasilva@gmail.com" method="post" enctype="text/plain">
+
+                    <div class="row gtr-50">
+                        <div class="col-6 col-12-small">
+                            <input name="name" placeholder="Nome" type="text" />
+                        </div>
+                        <div class="col-6 col-12-small">
+                            <input name="email" placeholder="E-mail" type="email" />
+                        </div>
+                        <div class="col-12">
+                            <textarea name="message" placeholder="Mensagem"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="button icon solid fa-envelope">Enviar Mensagem</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-6 col-12-medium">
+                <ul class="icons">
+                    <li class="icon solid fa-home">
+                        R. José Cosme Pamplona, 1447 - casa 5 - Bela Vista, Palhoça - SC, 88132-700
+                    </li>
+                    <li class="icon solid fa-phone">(48) 98438-9354</li>
+                    <li class="icon solid fa-envelope"><a href="mailto:contato@grupoescoteiro.com">contato@grupoescoteiro.com</a></li>
+                    <li class="icon brands fa-facebook-f"><a href="#">facebook.com/grupoescoteiro</a></li>
+                    <li class="icon brands fa-instagram"><a href="#">https://www.instagram.com/g.e.brownsea</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---- Rodapé da Pagina ---->
         <footer id="footer">
     <p>&copy; <span id="year"></span> Grupo Escoteiro Brownsea. Todos os direitos reservados.</p>
     <p>Criado por: Marco Antonio Carvalho da Silva</p>
@@ -542,7 +483,7 @@
 
     </div>
 
-    <!-- Scripts -->
+<!---- Scripts ---->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.dropotron.min.js"></script>
     <script src="assets/js/browser.min.js"></script>

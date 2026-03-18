@@ -2819,6 +2819,14 @@ input, select, textarea {
         width: 85%;
     }
 }
+/* ============================= */
+/* Corrigir espaçamento documentos */
+/* ============================= */
+
+#documentos p {
+    text-align: center !important;
+    line-height: 1.6;
+}
 
 
 
