@@ -2830,4 +2830,36 @@ input, select, textarea {
 
 
 
+#duvidas details {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
 
+#duvidas summary {
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+}
+
+#duvidas summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Setinha personalizada */
+#duvidas summary::after {
+    content: "▼";
+    float: right;
+    transition: 0.3s;
+}
+
+#duvidas details[open] summary::after {
+    transform: rotate(180deg);
+}
+
+#duvidas p {
+    margin-top: 10px;
+    color: #444;
+}
