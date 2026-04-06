@@ -1468,7 +1468,7 @@ input, select, textarea {
 /* Sections/Article */
 
 	section, article {
-		margin-bottom: 3em;
+		margin-bottom: 0;
 	}
 
 	section > :last-child,
@@ -2862,4 +2862,11 @@ input, select, textarea {
 #duvidas p {
     margin-top: 10px;
     color: #444;
+}
+@media (max-width: 768px) {
+
+    .seta {
+        display: none;
+    }
+
 }
