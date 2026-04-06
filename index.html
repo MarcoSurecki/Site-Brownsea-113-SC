@@ -516,45 +516,96 @@
 
 <!---- Fale Conosco ---->
 <section id="fale-conosco" style="background-color:#f4f4f4; padding:3em 0;">
-    <div class="container">
-        <header>
-            <h2><strong>fale Conosco</strong></h2>
-            <p>Quer saber mais ou entrar para o Grupo Escoteiro? Preencha o formulário abaixo:</p>
-        </header>
-        <div class="row">
-            <div class="col-6 col-12-medium">
-                <form action="marcoantoniocarvalhodasilva@gmail.com" method="post" enctype="text/plain">
+<div class="container">
 
-                    <div class="row gtr-50">
-                        <div class="col-6 col-12-small">
-                            <input name="name" placeholder="Nome" type="text" />
-                        </div>
-                        <div class="col-6 col-12-small">
-                            <input name="email" placeholder="E-mail" type="email" />
-                        </div>
-                        <div class="col-12">
-                            <textarea name="message" placeholder="Mensagem"></textarea>
-                        </div>
-                        <div class="col-12">
-                            <button type="submit" class="button icon solid fa-envelope">Enviar Mensagem</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="col-6 col-12-medium">
-                <ul class="icons">
-                    <li class="icon solid fa-home">
-                        R. José Cosme Pamplona, 1447 - casa 5 - Bela Vista, Palhoça - SC, 88132-700
-                    </li>
-                    <li class="icon solid fa-phone">(48) 98438-9354</li>
-                    <li class="icon solid fa-envelope"><a href="mailto:contato@grupoescoteiro.com">contato@grupoescoteiro.com</a></li>
-                    <li class="icon brands fa-facebook-f"><a href="#">facebook.com/grupoescoteiro</a></li>
-                    <li class="icon brands fa-instagram"><a href="#">https://www.instagram.com/g.e.brownsea</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+<header>
+<h2><strong>Fale Conosco</strong></h2>
+<p>Quer saber mais ou entrar para o Grupo Escoteiro? Preencha o formulário abaixo:</p>
+</header>
+
+<div class="row">
+
+<!-- FORMULÁRIO -->
+<div class="col-6 col-12-medium">
+
+<form action="https://formsubmit.co/marcoantoniocarvalhodasilva@gmail.com" method="POST">
+
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" value="Novo contato do site Escoteiro">
+
+<div class="row gtr-50">
+
+<div class="col-6 col-12-small">
+<input name="name" placeholder="Nome" type="text" required />
+</div>
+
+<div class="col-6 col-12-small">
+<input name="email" placeholder="E-mail" type="email" required />
+</div>
+
+<div class="col-12">
+<textarea name="message" placeholder="Mensagem" required></textarea>
+</div>
+
+<div class="col-12">
+<button type="submit" class="button icon solid fa-envelope">
+Enviar Mensagem
+</button>
+</div>
+
+</div>
+
+</form>
+
+</div>
+
+<!-- CONTATOS -->
+<div class="col-6 col-12-medium">
+
+<ul class="icons">
+
+<li class="icon solid fa-phone">
+<a href="https://wa.me/5548984389354" target="_blank">(48) 98438-9354</a>
+</li>
+
+<li class="icon solid fa-envelope">
+<a href="mailto:contato@grupoescoteiro.com">contato@grupoescoteiro.com</a>
+</li>
+
+<li class="icon brands fa-facebook-f">
+<a href="https://www.facebook.com/GEBrownsea113SC/" target="_blank">
+facebook.com/GEBrownsea113SC
+</a>
+</li>
+
+<li class="icon brands fa-instagram">
+<a href="https://www.instagram.com/g.e.brownsea" target="_blank">
+@g.e.brownsea
+</a>
+</li>
+
+<li class="icon solid fa-home">
+<a href="https://www.google.com/maps/search/?api=1&query=R.+José+Cosme+Pamplona+1447+Palhoça+SC" target="_blank">
+R. José Cosme Pamplona, 1447 - casa 5 - Bela Vista, Palhoça - SC
+</a>
+</li>
+</ul>
+
+<iframe
+src="https://www.google.com/maps?q=R.+José+Cosme+Pamplona+1447+Palhoça+SC&output=embed"
+width="100%"
+height="300"
+style="border:0; margin-top:20px;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+
+</div>
+
+</div>
+</div>
 </section>
+
 
 <!---- Rodapé da Pagina ---->
         <footer id="footer">
@@ -588,6 +639,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 </script>
+
+</section>
+
+<a href="https://wa.me/5548984389354" target="_blank"
+style="
+position: fixed;
+bottom: 20px;
+right: 20px;
+background: #25D366;
+color: white;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 30px;
+text-decoration: none;
+box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
 
 </body>
 </html>
