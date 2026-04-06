@@ -2760,13 +2760,16 @@ input, select, textarea {
     position: relative;
 }
 
-.fotos-scroll {
-    display: flex;
-    gap: 1em;
-    overflow-x: scroll !important;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    padding: 0 2.5em;
+.fotos-scroll img {
+    flex: 0 0 auto;
+    width: 260px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.fotos-scroll img:hover {
+    transform: scale(1.05);
 }
 
 /* remove barra de scroll */
@@ -2774,7 +2777,13 @@ input, select, textarea {
     display: none;
 }
 .fotos-scroll {
-    scrollbar-width: none;
+    display: flex;
+    flex-wrap: nowrap;   /* impede quebrar linha */
+    gap: 0em;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 2em;
 }
 
 /* imagens */
@@ -2868,5 +2877,16 @@ input, select, textarea {
     .seta {
         display: none;
     }
+
+}
+#header{
+    background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+
+#header{
+    background-attachment: scroll;
+}
 
 }
