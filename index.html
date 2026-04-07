@@ -23,11 +23,11 @@
     background-position: center;
     color: white;
     text-align: center;
-    min-height: 60vh;
+    min-height: 90vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    ">
+">
 
     <div class="container">
 
@@ -35,21 +35,34 @@
 
 <!---- Navegação Inicio ---->
         <nav id="nav">
-            <ul>
-                <li><a class="icon solid fa-home" href="#banner"><span>Início</span></a></li>
-                <li><a class="icon solid fa-compass" href="#sobre-escotismo"><span>Escotismo</span></a></li>
-                <li><a class="icon solid fa-question-circle" href="#duvidas"><span>Dúvidas</span></a></li>
-                <li><a class="icon solid fa-users" href="#quem-somos"><span>Quem Somos</span></a></li>
-                <li><a class="icon solid fa-star" href="#leis"><span>Leis Escoteiras</span></a></li>
-                <li><a class="icon solid fa-campground" href="#atividades"><span>Atividades</span></a></li>
-                <li><a class="icon solid fa-user-friends" href="#ramos-escoteiros"><span>Ramos</span></a></li>
-                <li><a class="icon solid fa-calendar-alt" href="#calendario"><span>Calendário</span></a></li>
-                <li><a class="icon solid fa-camera" href="#fotos"><span>Fotos do Grupo</span></a></li>
-                <li><a class="icon solid fa-file-alt" href="#documentos"><span>Documentos</span></a></li>
-                <li><a class="icon solid fa-lock" href="./chefes.html"><span>Área da Chefia</span></a></li>
-                <li><a class="icon solid fa-envelope" href="#fale-conosco"><span>Fale Conosco</span></a></li>
-            </ul>
-        </nav>
+    <ul>
+
+        <li><a href="#banner"><i class="fas fa-home"></i> Início</a></li>
+
+        <li><a href="#sobre-escotismo"><i class="fas fa-compass"></i> Escotismo</a></li>
+
+        <li><a href="#duvidas"><i class="fas fa-question-circle"></i> Dúvidas</a></li>
+
+        <li><a href="#quem-somos"><i class="fas fa-users"></i> Quem Somos</a></li>
+
+        <li><a href="#leis"><i class="fas fa-star"></i> Leis</a></li>
+
+        <li><a href="#atividades"><i class="fas fa-campground"></i> Atividades</a></li>
+
+        <li><a href="#ramos-escoteiros"><i class="fas fa-user-friends"></i> Ramos</a></li>
+
+        <li><a href="#calendario"><i class="fas fa-calendar"></i> Calendário</a></li>
+
+        <li><a href="#fotos"><i class="fas fa-camera"></i> Fotos</a></li>
+
+        <li><a href="#documentos"><i class="fas fa-file-alt"></i> Documentos</a></li>
+
+        <li class="chefia"><a href="./chefes.html"><i class="fas fa-lock"></i> Chefia</a></li>
+
+        <li><a href="#fale-conosco"><i class="fas fa-envelope"></i> Contato</a></li>
+
+    </ul>
+</nav>
 
     </div>
 </section>
@@ -135,37 +148,37 @@
         <h2 style="text-align:center; color:#cdd0cd;">Dúvidas Frequentes</h2>
         <p style="text-align:center; color:#e0e0e0;">Clique em uma pergunta para ver a resposta</p>
 
-        
+        <!--- Card Precisa saber acampar --->
         <details style="background:white; padding:15px; border-radius:10px; margin-bottom:10px;">
             <summary style="font-weight:bold; cursor:pointer;">Precisa saber acampar ou ter experiência?</summary>
             <p>Não precisa! No escotismo os jovens aprendem tudo passo a passo, desde as primeiras atividades até técnicas de acampamento, sempre com orientação dos chefes e dos colegas.</p>
         </details>
-
+        <!--- Card Adultos Podem Participar --->
         <details style="background:white; padding:15px; border-radius:10px; margin-bottom:10px;">
             <summary style="font-weight:bold; cursor:pointer;">Adultos podem participar?</summary>
             <p>Sim! O grupo conta com adultos voluntários que atuam como chefes escoteiros, ajudando na organização das atividades e na formação dos jovens.</p>
         </details>
-
+        <!--- Card As atividades São seguras --->
         <details style="background:white; padding:15px; border-radius:10px; margin-bottom:10px;">
             <summary style="font-weight:bold; cursor:pointer;">As atividades são seguras?</summary>
             <p>Sim. Todas as atividades são planejadas e acompanhadas por chefes treinados, seguindo normas de segurança e orientações da União dos Escoteiros do Brasil.</p>
         </details>
-
+        <!--- Card eu filho é tímido. Ele vai se adaptar --->
         <details style="background:white; padding:15px; border-radius:10px; margin-bottom:10px;">
             <summary style="font-weight:bold; cursor:pointer;">Meu filho é tímido. Ele vai se adaptar?</summary>
             <p>Sim! O escotismo incentiva amizade, cooperação e confiança. Muitos jovens tímidos acabam desenvolvendo comunicação, autonomia e novas amizades dentro do grupo.</p>
         </details>
-
+        <!--- Card Existe algum custo para participar? --->
         <details style="background:white; padding:15px; border-radius:10px; margin-bottom:10px;">
             <summary style="font-weight:bold; cursor:pointer;">Existe algum custo para participar?</summary>
             <p>Existe uma taxa para ajudar na manutenção das atividades e do grupo, mas buscamos sempre manter valores acessíveis para as famílias.</p>
         </details>
-
+        <!--- Card Posso visitar uma atividade antes de entrar --->
         <details style="background:white; padding:15px; border-radius:10px; margin-bottom:10px;">
             <summary style="font-weight:bold; cursor:pointer;">Posso visitar uma atividade antes de entrar?</summary>
             <p>Claro! Você pode entrar em contato conosco e visitar uma atividade para conhecer o grupo, conversar com os chefes e entender melhor como funciona.</p>
         </details>
-
+        <!--- Botão Quero conhecer o grupo --->
         <div style="text-align:center; margin-top:2em;">
             <a href="#fale-conosco" style="background:#2b5d34; color:white; padding:12px 25px; border-radius:8px; text-decoration:none;">
                 Quero conhecer o grupo
@@ -547,7 +560,7 @@ e obedecer à Lei Escoteira.
 </section>
 
 <section id="atividades" style="background:#f5f1e8; padding:1em em; text-align:center;">
-
+        <!--- Informaçoes de Atividades --->
             <h2 style="font-size:2em; margin-bottom:1em;">
             Horário das Atividades
             <span style="display:block; width:60px; height:3px; background:#c99b3b; margin:0.4em auto 0; border-radius:2px;"></span>
@@ -714,6 +727,20 @@ box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 <i class="fab fa-whatsapp"></i>
 
 </a>
+
+<script>
+window.addEventListener("scroll", function() {
+
+    let nav = document.getElementById("nav");
+
+    if (window.scrollY > 80) {
+        nav.classList.add("scrolled");
+    } else {
+        nav.classList.remove("scrolled");
+    }
+
+});
+</script>
 
 </body>
 </html>

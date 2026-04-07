@@ -2883,4 +2883,71 @@ input, select, textarea {
     background-attachment: fixed;
 }
 
+#nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+}
 
+#nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 8px;
+    margin: 0;
+    list-style: none;
+}
+
+#nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+/* efeito hover */
+
+#nav ul li a:hover {
+    background: rgba(255,255,255,0.1);
+    color: #f2a500;
+    transform: translateY(-2px);
+}
+
+/* botão chefia */
+
+#nav ul li.chefia a {
+    background: #f2a500;
+    color: black;
+    font-weight: 700;
+}
+
+#nav ul li.chefia a:hover {
+    background: #ffcc33;
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    transition: all 0.4s ease;
+    z-index: 1000;
+}
+
+/* quando rolar a página */
+
+#nav.scrolled {
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(8px);
+    padding: 4px 0;
+}
