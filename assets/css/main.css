@@ -2762,9 +2762,9 @@ input, select, textarea {
 
 .fotos-scroll img {
     flex: 0 0 auto;
-    width: 260px;
+    width: 240px;
     height: 180px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 10px;
 }
 
@@ -2883,10 +2883,4 @@ input, select, textarea {
     background-attachment: fixed;
 }
 
-@media (max-width: 768px) {
 
-#header{
-    background-attachment: scroll;
-}
-
-}
